@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ EDIT: page title + meta ============ -->
+  <title>Achieve X Outcome In Y Time | Your Brand</title>
+  <meta name="description" content="Book your free strategy session." />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Reusable components (see components.js). Defer so the page markup parses first. -->
+  <script src="components.js" defer></script>
+</head>
+<body id="top">
+
+  <!-- ================= HEADER / BRAND ================= -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top">
+        <img src="assets/brand-logo.svg" alt="Brand logo" />
+        <span class="brand-name">BrandLogo</span> <!-- EDIT: brand name -->
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container">
+      <span class="label">Avatar Callout</span> <!-- EDIT: who this is for -->
+      <h1>Achieve X Outcome In Y Time</h1>
+      <p class="h1-sub">With unique solution</p>
+      <p class="lead">Without common objections.</p>
+
+      <!-- VIDEO: replace this component with your embed, or drop an <iframe> inside it -->
+      <c-video type="hero" bar="Watch the video below"></c-video>
+
+      <c-proof></c-proof>
+    </div>
+  </section>
+
+  <!-- ================= FUTURE PACING ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <span class="label">Here’s what we do differently.</span>
+        <h2 style="margin-top:12px;">If you’ve been struggling with x, this is why...</h2>
+      </div>
+
+      <div class="cards">
+        <c-card title="Old Way">You’ve probably been trying it like this. But don’t worry it’s not your fault...</c-card>
+        <c-card title="Problem">You’ve probably been trying it like this. But don’t worry it’s not your fault...</c-card>
+        <c-card title="New Way">You’ve probably been trying it like this. But don’t worry it’s not your fault...</c-card>
+      </div>
+
+      <div class="pacing-outro">
+        <h3>Ready to try a different approach?</h3>
+        <p class="desc">Book your free call now</p>
+        <c-proof></c-proof>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE STUDIES ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="case-head">
+        <span class="label">Case Studies</span>
+        <h2>Just some of the results our customers have achieved</h2>
+        <p class="lead">Hear what they have to say...</p>
+      </div>
+
+      <!-- CASE 1 -->
+      <div class="case-row">
+        <c-video type="case"></c-video>
+        <div class="case-text">
+          <h4>“I had x problem”</h4>
+          <p class="case-name">Customer name</p>
+          <div class="case-body">
+            <p>[Client] came to us struggling with [main problem].</p>
+            <p>They had tried [previous solutions] but results were inconsistent.</p>
+            <p>We implemented [core strategy/tactic used] and within [timeframe], they saw [specific result].</p>
+            <p>By [secondary action taken], they unlocked even more growth—[bonus outcome or metric]. Now they’re [final result or transformation], with a system that works on autopilot.</p>
+          </div>
+          <p class="case-result">Final result: Result</p>
+        </div>
+      </div>
+
+      <!-- CASE 2 (reversed) -->
+      <div class="case-row reverse">
+        <c-video type="case"></c-video>
+        <div class="case-text">
+          <h4>“I had y problem”</h4>
+          <p class="case-name">Customer name</p>
+          <div class="case-body">
+            <p>[Client] came to us struggling with [main problem].</p>
+            <p>They had tried [previous solutions] but results were inconsistent.</p>
+            <p>We implemented [core strategy/tactic used] and within [timeframe], they saw [specific result].</p>
+            <p>By [secondary action taken], they unlocked even more growth—[bonus outcome or metric]. Now they’re [final result or transformation], with a system that works on autopilot.</p>
+          </div>
+          <p class="case-result">Final result: Result</p>
+        </div>
+      </div>
+
+      <div class="case-outro">
+        <h3>Ready to get results like these?</h3>
+        <p class="desc">Book your free call now</p>
+        <c-proof></c-proof>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="tst-head">
+        <span class="label">Testimonials</span>
+        <h2>And they’re not the only ones</h2>
+        <p class="lead">More wins inside our community</p>
+      </div>
+
+      <div class="tst-grid">
+        <c-video type="vertical"></c-video>
+
+        <div class="tst-cards">
+          <c-testimonial quote='"Result I got..."' name="Customer A.">Review text.</c-testimonial>
+          <c-testimonial quote='"Result I got..."' name="Customer A.">Review text.</c-testimonial>
+          <c-testimonial quote='"Result I got..."' name="Customer A.">Review text.</c-testimonial>
+        </div>
+
+        <c-video type="vertical"></c-video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AUTHORITY & TRUST ================= -->
+  <section class="section authority">
+    <div class="container">
+      <div class="authority-grid">
+        <div class="authority-images">
+          <img src="assets/authority-img.svg" alt="" />
+          <img src="assets/authority-img.svg" alt="" />
+        </div>
+        <div class="authority-text">
+          <span class="label">How I Discovered Solution</span>
+          <h2>Why work with us?</h2>
+          <h4>“My low point...”</h4>
+          <div class="story">
+            <p>I used to struggle with [insert specific problem your audience also faces]. It felt like [describe emotion or frustration].</p>
+            <p>I tried [method/solution #1], [method/solution #2], even [method/solution #3]... But nothing really worked.</p>
+            <p>Everything changed when I realized [insert big insight or turning point]. That was the moment I decided to [new path or strategy].</p>
+            <p>After [timeframe or effort], I [insert transformation/result]. Now, [brief snapshot of life/business now].</p>
+            <p>I created [name of offer/program] because I know there are others who feel like I did. And I want to give you the shortcut I never had.</p>
+            <p>If you're tired of [repeat core problem], I’ll show you exactly how I turned things around—step-by-step.</p>
+          </div>
+        </div>
+      </div>
+      <c-cta href="#book">Book my free strategy session</c-cta>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="faq-head">
+        <span class="label">Want to know more?</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <c-faq q="What if I’ve already tried [common method] and it didn’t work?">EDIT: Your answer here.</c-faq>
+        <c-faq q="Do I need [resource, skill, experience] to get results with this?">EDIT: Your answer here.</c-faq>
+        <c-faq q="How is this different from [alternative solution or competitor]?">EDIT: Your answer here.</c-faq>
+        <c-faq q="What if I don’t have time right now?">EDIT: Your answer here.</c-faq>
+        <c-faq q="Can this really work for someone like me?">EDIT: Your answer here.</c-faq>
+        <c-faq q="Is this just another [trend/scam/hype]?">EDIT: Your answer here.</c-faq>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="section final-cta" id="book">
+    <div class="container">
+      <h2>Ready to get x result?</h2>
+      <p class="desc">Join x others that have already joined</p>
+      <c-proof></c-proof>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <a class="back-to-top" href="#top">BACK TO TOP</a>
+      <p class="legal-links"><a href="#">Terms</a> / <a href="#">Privacy</a></p>
+      <div class="footer-row">
+        <span>&copy; <span id="year"></span> Your Brand</span>
+        <span>support@yourbrand.com</span>
+      </div>
+      <img class="divider" src="assets/footer-line.svg" alt="" />
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> This site and the products/services offered are not affiliated with, sponsored by, or endorsed by Meta (Facebook, Instagram) in any way. Results mentioned are not typical and will vary based on individual effort, experience, and market conditions. We do not guarantee any specific outcome or financial return. All content is provided for informational and educational purposes only. This is not business, legal, health, or financial advice. Any testimonials or examples are not promises of what you can achieve—they are illustrations of what others have done with effort and action. By using this site, you accept that you are fully responsible for your own actions and outcomes. Always do your own due diligence before making financial or business decisions.
+      </p>
+      <p class="powered">POWERED BY <a href="https://advisorwebgrowth.com" target="_blank" rel="noopener">ADVISORWEBGROWTH</a></p>
+      <p class="copyright">AdvisorWebGrowth Templates © 2025 AdvisorWebGrowth. All rights reserved. Customization is allowed for personal or business use according to your purchased license. Resale and redistribution are prohibited.</p>
+    </div>
+  </footer>
+</body>
+</html>

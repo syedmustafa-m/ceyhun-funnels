@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ EDIT: page title + meta ============ -->
+  <title>Your Call Is Locked In | Your Brand</title>
+  <meta name="description" content="Your call is booked — watch this before we chat." />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Reusable components (shared with index.html) -->
+  <script src="components.js" defer></script>
+</head>
+<body id="top">
+
+  <!-- ================= HEADER / BRAND ================= -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top">
+        <img src="assets/brand-logo.svg" alt="Brand logo" />
+        <span class="brand-name">BrandLogo</span> <!-- EDIT: brand name -->
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container">
+      <span class="label">Congratulations</span>
+      <h1>Your Call Is Locked In</h1>
+      <p class="h1-sub">Watch This Before We Chat</p>
+      <p class="lead">This short video will show you what to expect and how to get the most out of your call. Don’t skip it—it’ll save us both time and make sure you're ready.</p>
+
+      <!-- VIDEO: replace this component with your embed, or drop an <iframe> inside it -->
+      <c-video type="hero" bar="Watch the video below"></c-video>
+    </div>
+  </section>
+
+  <!-- ================= NEXT STEPS (before the call) ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <span class="label">Next Steps</span>
+        <h2 style="margin-top:12px;">Here’s what to do before the call</h2>
+        <p class="lead" style="max-width:776px;margin:16px auto 0;">Follow these 3 simple steps to make sure you’re fully prepared and we can hit the ground running.</p>
+      </div>
+
+      <div class="step-cards">
+        <c-step-card step="Step 1" title="Watch the Video Above">This will give you clarity on what we’ll cover and how we help people like you get results. Watch it fully so you come in informed and ready.</c-step-card>
+        <c-step-card step="Step 2" title="Add the Call to Your Calendar">Make sure you don’t miss it. Set a reminder, block off the time, and treat it like a real meeting—because it is.</c-step-card>
+        <c-step-card step="Step 3" title="Show Up Ready">Be in a quiet place, have a notebook handy, and come with your goals, challenges, and questions. We’ll get the most done if you come prepared.</c-step-card>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESOURCES ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <span class="label">Resources</span>
+        <h2 style="margin-top:12px;">Helpful resources to review before the call</h2>
+        <p class="lead" style="max-width:776px;margin:16px auto 0;">These will give you extra context, inspiration, and clarity so you show up confident and ready to make moves.</p>
+      </div>
+
+      <!-- 2x2 video grid. Replace each with your embed. -->
+      <div class="resource-grid">
+        <c-video type="case"></c-video>
+        <c-video type="case"></c-video>
+        <c-video type="case"></c-video>
+        <c-video type="case"></c-video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE STUDIES ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="case-head">
+        <span class="label">Case Studies</span>
+        <h2>Just some of the results our customers have achieved</h2>
+        <p class="lead">Hear what they have to say...</p>
+      </div>
+
+      <!-- CASE 1 -->
+      <div class="case-row">
+        <c-video type="case"></c-video>
+        <div class="case-text">
+          <h4>“I had x problem”</h4>
+          <p class="case-name">Customer name</p>
+          <div class="case-body">
+            <p>[Client] came to us struggling with [main problem].</p>
+            <p>They had tried [previous solutions] but results were inconsistent.</p>
+            <p>We implemented [core strategy/tactic used] and within [timeframe], they saw [specific result].</p>
+            <p>By [secondary action taken], they unlocked even more growth—[bonus outcome or metric]. Now they’re [final result or transformation], with a system that works on autopilot.</p>
+          </div>
+          <p class="case-result">Final result: Result</p>
+        </div>
+      </div>
+
+      <!-- CASE 2 (reversed) -->
+      <div class="case-row reverse">
+        <c-video type="case"></c-video>
+        <div class="case-text">
+          <h4>“I had y problem”</h4>
+          <p class="case-name">Customer name</p>
+          <div class="case-body">
+            <p>[Client] came to us struggling with [main problem].</p>
+            <p>They had tried [previous solutions] but results were inconsistent.</p>
+            <p>We implemented [core strategy/tactic used] and within [timeframe], they saw [specific result].</p>
+            <p>By [secondary action taken], they unlocked even more growth—[bonus outcome or metric]. Now they’re [final result or transformation], with a system that works on autopilot.</p>
+          </div>
+          <p class="case-result">Final result: Result</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section final-cta">
+    <div class="container">
+      <h2>See you on our call!</h2>
+      <p class="cta-note">Please go through these resources to ensure you’re ready for the call.</p>
+      <c-proof no-button></c-proof>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <a class="back-to-top" href="#top">BACK TO TOP</a>
+      <p class="legal-links"><a href="#">Terms</a> / <a href="#">Privacy</a></p>
+      <div class="footer-row">
+        <span>&copy; <span id="year"></span> Your Brand</span>
+        <span>support@yourbrand.com</span>
+      </div>
+      <img class="divider" src="assets/footer-line.svg" alt="" />
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> This site and the products/services offered are not affiliated with, sponsored by, or endorsed by Meta (Facebook, Instagram) in any way. Results mentioned are not typical and will vary based on individual effort, experience, and market conditions. We do not guarantee any specific outcome or financial return. All content is provided for informational and educational purposes only. This is not business, legal, health, or financial advice. Any testimonials or examples are not promises of what you can achieve—they are illustrations of what others have done with effort and action. By using this site, you accept that you are fully responsible for your own actions and outcomes. Always do your own due diligence before making financial or business decisions.
+      </p>
+      <p class="powered">POWERED BY <a href="https://advisorwebgrowth.com" target="_blank" rel="noopener">ADVISORWEBGROWTH</a></p>
+      <p class="copyright">AdvisorWebGrowth Templates © 2025 AdvisorWebGrowth. All rights reserved. Customization is allowed for personal or business use according to your purchased license. Resale and redistribution are prohibited.</p>
+    </div>
+  </footer>
+</body>
+</html>

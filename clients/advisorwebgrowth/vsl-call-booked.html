@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your Call Is Locked In | AdvisorWebGrowth</title>
+  <meta name="description" content="Your call is booked — watch this quick video before we chat." />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="components.js" defer></script>
+</head>
+<body id="top">
+
+  <!-- ================= HEADER / BRAND ================= -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top">
+        <img src="assets/brand-logo.svg" alt="AdvisorWebGrowth logo" /> <!-- TODO: real AdvisorWebGrowth logo -->
+        <span class="brand-name">AdvisorWebGrowth</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container">
+      <span class="label">Congratulations</span>
+      <h1>Your Call Is Locked In</h1>
+      <p class="h1-sub">Watch This Before We Chat</p>
+      <p class="lead">This short video shows exactly what we’ll cover so you get the most out of our call — we’ll pull up your last few posts and your calendar together. Don’t skip it; it’ll save us both time.</p>
+
+      <!-- VIDEO: replace with your welcome embed -->
+      <c-video type="hero" bar="Watch the video below"></c-video> <!-- TODO: add welcome video embed -->
+    </div>
+  </section>
+
+  <!-- ================= NEXT STEPS (before the call) ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <span class="label">Next Steps</span>
+        <h2 style="margin-top:12px;">Here’s what to do before the call</h2>
+        <p class="lead" style="max-width:776px;margin:16px auto 0;">Follow these 3 simple steps so we can hit the ground running.</p>
+      </div>
+
+      <div class="step-cards">
+        <c-step-card step="Step 1" title="Watch the Video Above">It shows what we’ll cover and how I help advisors build a pipeline they own. Watch it fully so you come in informed and ready.</c-step-card>
+        <c-step-card step="Step 2" title="Add the Call to Your Calendar">Make sure you don’t miss it. Set a reminder, block off the time, and treat it like a real meeting—because it is.</c-step-card>
+        <c-step-card step="Step 3" title="Show Up Ready">Have your last few LinkedIn posts and your calendar handy, and come with your goals and questions. We’ll get the most done if you’re prepared.</c-step-card>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESOURCES ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="center">
+        <span class="label">Resources</span>
+        <h2 style="margin-top:12px;">Helpful resources to review before the call</h2>
+        <p class="lead" style="max-width:776px;margin:16px auto 0;">A little extra context so you show up confident and ready to make moves.</p>
+      </div>
+
+      <!-- 2x2 video grid — TODO: add real resource video embeds -->
+      <div class="resource-grid">
+        <c-video type="case"></c-video>
+        <c-video type="case"></c-video>
+        <c-video type="case"></c-video>
+        <c-video type="case"></c-video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE STUDIES ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="case-head">
+        <span class="label">Case Studies</span>
+        <h2>Just some of what advisors are seeing</h2>
+        <p class="lead">Real conversations, real booked calls.</p>
+      </div>
+
+      <!-- CASE 1 — Angus -->
+      <div class="case-row">
+        <c-video type="case"></c-video> <!-- TODO: Angus case-study video embed -->
+        <div class="case-text">
+          <h4>“My pipeline wasn’t mine”</h4>
+          <p class="case-name">Angus</p>
+          <div class="case-body">
+            <p>Angus grew entirely on referrals — great months and dead months, with no way to change a slow week.</p>
+            <p>He’d tried posting on LinkedIn, but nothing ever booked.</p>
+            <p>We rewrote his profile, set up his console, loaded his network, and built the DM engine — then coached the daily motion.</p>
+            <p>Within the first few weeks he was starting real conversations every day: 60 conversations started and 10 calls booked — a pipeline he now runs himself in under 45 minutes a day.</p>
+          </div>
+          <p class="case-result">Final result: 10 calls booked, a self-run pipeline</p>
+        </div>
+      </div>
+
+      <!-- CASE 2 — TODO: Mike anonymous until permissioned. Do NOT publish without approval. -->
+      <div class="case-row reverse">
+        <c-video type="case"></c-video>
+        <div class="case-text">
+          <h4>TODO: second case study</h4>
+          <p class="case-name">TODO — “Mike” anonymous until permissioned</p>
+          <div class="case-body">
+            <p>TODO: Add the second case study only once the client has given permission. Do not invent results or names.</p>
+          </div>
+          <p class="case-result">TODO: final result</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section final-cta">
+    <div class="container">
+      <h2>See you on our call!</h2>
+      <p class="cta-note">Please watch the video above and bring your last few posts so you’re ready for our call.</p>
+      <c-proof no-button guarantee="No lock-in — month to month" count="Booked calls in 1–3 weeks"></c-proof>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <a class="back-to-top" href="#top">BACK TO TOP</a>
+      <p class="legal-links"><a href="#">Terms</a> / <a href="#">Privacy</a></p>
+      <div class="footer-row">
+        <span>&copy; <span id="year"></span> AdvisorWebGrowth</span>
+        <span>TODO: support email</span>
+      </div>
+      <img class="divider" src="assets/footer-line.svg" alt="" />
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> This site and the products/services offered are not affiliated with, sponsored by, or endorsed by Meta (Facebook, Instagram) or LinkedIn in any way. Results mentioned are not typical and will vary based on individual effort, experience, and market conditions. We do not guarantee any specific outcome or financial return. All content is provided for informational and educational purposes only. This is not business, legal, health, or financial advice. Any testimonials or examples are not promises of what you can achieve—they are illustrations of what others have done with effort and action. By using this site, you accept that you are fully responsible for your own actions and outcomes. Always do your own due diligence before making financial or business decisions.
+      </p>
+      <p class="powered">POWERED BY <a href="https://advisorwebgrowth.com" target="_blank" rel="noopener">ADVISORWEBGROWTH</a></p>
+      <p class="copyright">AdvisorWebGrowth Templates © 2025 AdvisorWebGrowth. All rights reserved. Customization is allowed for personal or business use according to your purchased license. Resale and redistribution are prohibited.</p>
+    </div>
+  </footer>
+</body>
+</html>
